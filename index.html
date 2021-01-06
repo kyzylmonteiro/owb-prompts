@@ -1,0 +1,39 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="node_modules/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/moon.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>Slide 0</section>
+      <section>
+        <section id="first" data-background-color="grey">
+          Slide 1
+          <br>
+          <a href="#/last">Jump to last slide</a>
+        </section>
+        <section data-background-color="blue">
+          Slide 1.2  
+          <img src="https://placekitten.com/450/300" width="450" height="300"> 
+        </section>
+      </section>
+      <section data-background-color="red">
+        Slide 2
+        <img src="https://placekitten.com/400/300" width="450" height="300">
+      </section>
+      <section data-background-color="orange" id="last">Slide 3
+        <br>
+        <a href="#/first">Redo?</a>
+      </section>
+    </div>
+  </div>
+  <script src="node_modules/reveal.js/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize();
+  </script>
+</body>
+
+</html>
